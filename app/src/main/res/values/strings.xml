@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IndividualAssignmentMAMN01</string>
+    <string name="choose_sensor">Choose sensor(s) to test:</string>
+    <string name="button_compass">Compass</string>
+    <string name="button_accelerometer">Accelerometer</string>
+    <string name="accelerometer_values">Accelerometer values: </string>
 </resources>
