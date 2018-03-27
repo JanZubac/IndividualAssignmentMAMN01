@@ -138,7 +138,7 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
             where = "NE";
 
 
-        txt_compass.setText("Direction: " + mAzimuth + "° " + where);
+        txt_compass.setText("Direction: " + mAzimuth + " degrees " + where);
     }
 
 }
