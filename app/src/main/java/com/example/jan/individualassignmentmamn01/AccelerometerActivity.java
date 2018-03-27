@@ -16,6 +16,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     private Sensor mAccelerometer;
     private TextView x, y, z;
     private ConstraintLayout l;
+    TextView direc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         x = (TextView) findViewById(R.id.x);
         y = (TextView) findViewById(R.id.y);
         z = (TextView) findViewById(R.id.z);
+        direc = (TextView) findViewById(R.id.direction);
 
     }
 
@@ -36,10 +38,14 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
     y.setText("Y: " + Math.round(event.values[1]));
     z.setText("Z: " + Math.round(event.values[2]));
 
-    if(event.values[0] >= 1)
-        l.setBackgroundColor(Color.rgb(255,0,0));
-    if(event.values[0] <= -1)
-        l.setBackgroundColor(Color.rgb(0,255,0));
+    if(event.values[0] >= 1) {
+        l.setBackgroundColor(Color.rgb(255, 0, 0));
+        direc.setText("VÄNSTER");
+    }
+    if(event.values[0] <= -1) {
+        l.setBackgroundColor(Color.rgb(0, 255, 0));
+        direc.setText("HÖGER");
+    }
     if(event.values[0] < 1 && event.values[0] > -1)
         l.setBackgroundColor(Color.rgb(255,0,255));
 

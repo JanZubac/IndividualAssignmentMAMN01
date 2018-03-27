@@ -4,4 +4,5 @@
     <string name="button_compass">Compass</string>
     <string name="button_accelerometer">Accelerometer</string>
     <string name="accelerometer_values">Accelerometer values: </string>
+    <string name="z">Z:</string>
 </resources>
