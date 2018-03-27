@@ -14,6 +14,7 @@ import android.widget.TextView;
 public class CompassActivity extends AppCompatActivity implements SensorEventListener {
     ImageView compass_img;
     TextView txt_compass;
+    TextView direc;
     int mAzimuth;
     private SensorManager mSensorManager;
     private Sensor mRotationV, mAccelerometer, mMagnetometer;
@@ -28,11 +29,12 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_compass);
 
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         compass_img = (ImageView) findViewById(R.id.img_compass);
         txt_compass = (TextView) findViewById(R.id.txt_azimuth);
+        direc = (TextView) findViewById(R.id.direction);
 
         start();
     }
@@ -138,7 +140,20 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
             where = "NE";
 
 
-        txt_compass.setText(mAzimuth + "° " + where);
+        txt_compass.setText("Direction: " + mAzimuth + "° " + where);
+
+        if(where == "NE" || where == "E" || where == "SE") {
+            direc.setText("Höger");
+        }
+
+        if(where == "NW" || where == "W" || where == "SW") {
+            direc.setText("Vänster");
+        }
+
+        if(where == "S")
+            direc.setText("Neråt");
+        if(where == "N")
+            direc.setText("Uppåt");
     }
 
 }
