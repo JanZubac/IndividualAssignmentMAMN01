@@ -7,5 +7,5 @@ Inga tillägg har gjort i denna aktivitet.
 
 
 Större delarna av AccelerometerAktiviteten kommer från *"SensorManager"*-dokumentationen, tillgänglig på: https://developer.android.com/reference/android/hardware/SensorManager.html.  
-OnSensorChanged-metoden i AccelerometerAktiviteten är inspirerad av "SensorEvent"-dokumentationen, tillgänglig på: https://developer.android.com/reference/android/hardware/SensorEvent.html. 
+OnSensorChanged-metoden i AccelerometerAktiviteten är inspirerad av *"SensorEvent"*-dokumentationen, tillgänglig på: https://developer.android.com/reference/android/hardware/SensorEvent.html. 
 Tillägg som har gjorts i AccelerometerAktiviteten är att lägga till en tillbakaknapp, att skärmen skiftar till grön färg när man lutar mobilen åt höger, att den skiftar till röd färg när man lutar mobilen åt vänster och att bakgrundsfärgen är lila by default.
