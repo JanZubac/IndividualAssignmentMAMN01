@@ -5,4 +5,6 @@
     <string name="button_accelerometer">Accelerometer</string>
     <string name="accelerometer_values">Accelerometer values: </string>
     <string name="z">Z:</string>
+    <string name="y">Y:</string>
+    <string name="x">X:</string>
 </resources>

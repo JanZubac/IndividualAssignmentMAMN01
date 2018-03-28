@@ -26,7 +26,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         l = findViewById(R.id.layout);
         x = (TextView) findViewById(R.id.x);
-        y = (TextView) findViewById(R.id.y);
+        y = (TextView) findViewById(R.id.testing);
         z = (TextView) findViewById(R.id.z);
         direc = (TextView) findViewById(R.id.direction);
 
@@ -47,7 +47,7 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         direc.setText("HÖGER");
     }
     if(event.values[0] < 1 && event.values[0] > -1)
-        l.setBackgroundColor(Color.rgb(255,0,255));
+        l.setBackgroundColor(Color.rgb(255,255,255));
 
     }
 
