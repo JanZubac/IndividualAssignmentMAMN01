@@ -1,3 +1,5 @@
+Jag började att skapa appen genom att göra en "MainActivity" som visade en sida med knapparna "Accelerometer" och "Compass". Sedan lade jag till så att den "Compass"-knappen länkade till en ny kompass-aktivitet. Därpå gjorde jag en Accelerometer-aktivitet och kopplade "Accelerometer"-knappen på startsidan till denna knapp. Sedan gjordes lite småändringar såsom färg, tillbakaknapp och liknande.
+
 Koden i kompassaktiviteten är kopierad från tutorialn *"How-to create a Compass App"* tillgänglig på https://www.wlsdevelop.com/index.php/en/blog?option=com_content&view=article&id=38. 
 Modifikationer som har gjort till denna kod är att bilden har bytts ut samt att det finns en tillbaka-knapp längst upp till vänster som länkar tillbaka en till MainAktiviteten. En kort text där det står *"Direction: "* har även lagts till för att indikera att det är en riktning som visas. Texten har dessutom ändrats så att det står *Degrees" istället för "°".
 
